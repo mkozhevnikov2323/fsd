@@ -1,0 +1,12 @@
+.container__item {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #e6b4b4;
+  border: 1px solid green;
+}
+
+.container__item h2 {
+  text-align: center;
+  color: #6e1313;
+}

@@ -1,0 +1,31 @@
+include ../utils/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    body
+        .container
+            ul.colors-list
+                +color-block('Dark Shade 100%', '#1F2041')
+                +color-block('Dark Shade 75%', '#1F2041')
+                +color-block('Dark Shade 50%', '#1F2041')
+                +color-block('Dark Shade 25%', '#1F2041')
+                +color-block('Dark Shade 5%', '#1F2041')
+                +color-block('Purple', '#BC9CFF')
+                +color-block('Green', '#6FCF97')
+            ul.titles-list
+                li.title-block
+                    p.title-block__item h1
+                    p.font-name This one is the sub-section or widget title
+                li.title-block
+                    p.title-block__item h2
+                    p.font-name Next one is the item title inside widgets
+                li.title-block
+                    p.title-block__item h3
+                    p.font-name This is a label or CTA text
+                li.title-block
+                    p.title-block__item Body
+                    p.font-name This is the body text which is used for most of the design, like paragraphs, lists, etc.
+
+
