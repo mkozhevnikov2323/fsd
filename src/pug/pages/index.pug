@@ -1,31 +1,59 @@
-include ../utils/mixins
+
 
 doctype html
 html(lang="en")
     head
         meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@700&display=swap" rel="stylesheet")
     body
-        .container
-            ul.colors-list
-                +color-block('Dark Shade 100%', '#1F2041')
-                +color-block('Dark Shade 75%', '#1F2041')
-                +color-block('Dark Shade 50%', '#1F2041')
-                +color-block('Dark Shade 25%', '#1F2041')
-                +color-block('Dark Shade 5%', '#1F2041')
-                +color-block('Purple', '#BC9CFF')
-                +color-block('Green', '#6FCF97')
-            ul.titles-list
-                li.title-block
-                    p.title-block__item h1
-                    p.font-name This one is the sub-section or widget title
-                li.title-block
-                    p.title-block__item h2
-                    p.font-name Next one is the item title inside widgets
-                li.title-block
-                    p.title-block__item h3
-                    p.font-name This is a label or CTA text
-                li.title-block
-                    p.title-block__item Body
-                    p.font-name This is the body text which is used for most of the design, like paragraphs, lists, etc.
+        .container.container_flexSB.mt-145
+            ul.color-list.container__item_w40
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.bgc-dark
+                    .color-list__part
+                        .font-h2 Dark Shade 100%
+                        .font-h2reg #1F2041
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.bgc-dark-sh75
+                    .color-list__part
+                        .font-h2 Dark Shade 75%
+                        .font-h2reg #1F2041
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.bgc-dark-sh50
+                    .color-list__part
+                        .font-h2 Dark Shade 50%
+                        .font-h2reg #1F2041
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.bgc-dark-sh25
+                    .color-list__part
+                        .font-h2 Dark Shade 25%
+                        .font-h2reg #1F2041
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.bgc-dark-sh5
+                    .color-list__part
+                        .font-h2 Dark Shade 5%
+                        .font-h2reg #1F2041
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.purple
+                    .color-list__part
+                        .font-h2 Purple
+                        .font-h2reg #BC9CFF
+                li.color-list__item.color-list__item_flex
+                    .color-list__part.rectangle.green
+                    .color-list__part
+                        .font-h2 Green
+                        .font-h2reg #6FCF97
 
-
+            ul.type-list.container__item_w40
+                li.type-list__item.type-list__item_flex
+                    p.type-list__tag-h1 h1
+                    p.type-list__text.font-h1 This one is the sub-section or widget title
+                li.type-list__item.type-list__item_flex
+                    p.type-list__tag-h2 h2
+                    p.type-list__text.font-h2 Next one is the item title inside widgets
+                li.type-list__item.type-list__item_flex
+                    p.type-list__tag-h3 h3
+                    p.type-list__text.font-h3 This is a label or CTA text
+                li.type-list__item.type-list__item_flex
+                    p.type-list__tag-body Body
+                    p.type-list__text.font-body This is the body text which is used for most of the design, like paragraphs, lists, etc.

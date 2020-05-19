@@ -10,9 +10,15 @@ module.exports = {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer : {
+        port: 8081
+    },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './src/pug/pages/index.pug'
+            template: './src/pug/pages/index.pug',
+            minify: {
+                collapseWhitespace: false
+            }
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

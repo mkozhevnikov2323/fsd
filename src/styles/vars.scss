@@ -1,0 +1,140 @@
+// Vars
+$dark: #1F2041;
+$dark-sh75: rgba(31, 32, 65, 0.75);
+$dark-sh50: rgba(31, 32, 65, 0.5);
+$dark-sh25: rgba(31, 32, 65, 0.25);
+$dark-sh5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+$grey:#E5E5E5;
+$title-font: 'Quicksand', sans-serif;
+$body-font: 'Montserrat', sans-serif;
+
+// Colors & Background-colors
+.bgc-dark {
+    background-color: $dark;
+}
+.bgc-dark-sh75 {
+    background-color: $dark-sh75;
+}
+.bgc-dark-sh50 {
+    background-color: $dark-sh50;
+}
+.bgc-dark-sh25 {
+    background-color: $dark-sh25;
+}
+.bgc-dark-sh5 {
+    background-color: $dark-sh5;
+}
+.purple {
+    background-color: $purple;
+}
+.green {
+    background-color: $green;
+}
+// .color-dark {
+//     color: $dark;
+// }
+.color-dark-sh75 {
+    color: $dark-sh75;
+}
+.color-dark-sh50 {
+    color: $dark-sh50;
+}
+// .color-dark-sh25 {
+//     color: $dark-sh25;
+// }
+// Fonts & Types
+.font-h1 {
+    font-family: $title-font;
+    color: $dark;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+.font-h2 {
+    font-family: $title-font;
+    color: $dark;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+.font-h2reg {
+    font-family: $title-font;
+    color: $dark;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+.font-h3 {
+    font-family: $title-font;
+    color: $dark;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.type-list__tag-h1 {
+    font-family: $body-font;
+    color: $dark-sh25;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    width: 37px;
+    text-align: right;
+    margin-right: 31px;
+}
+.type-list__tag-h2 {
+    font-family: $body-font;
+    color: $dark-sh25;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+    width: 37px;
+    text-align: right;
+    margin-right: 31px;
+}
+.type-list__tag-h3 {
+    font-family: $body-font;
+    color: $dark-sh25;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    width: 37px;
+    text-align: right;
+    margin-right: 31px;
+}
+.type-list__tag-body {
+    color: $dark-sh25;
+    width: 37px;
+    text-align: right;
+    margin-right: 31px;
+}
+.type-list__text {
+    width: 340px;
+}
+
+// Style`s Templates 
+.tpl-w100 {
+    width: 100%;
+}
+// .tpl-w50 {
+//     width: 50%;
+// }
+.tpl-font-body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
