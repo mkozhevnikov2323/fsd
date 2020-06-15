@@ -1,0 +1,46 @@
+.color-list {
+    padding-left: 10px;
+}
+.color-list__item {
+    margin-bottom: 20px;
+}
+.color-list__item_flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.color-list__part {
+    margin-right: 40px;
+    padding-top: 9px;
+}
+.rectangle {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+.bgc-dark {
+    background-color: $dark;
+}
+.bgc-dark-sh75 {
+    background-color: $dark-sh75;
+}
+.bgc-dark-sh50 {
+    background-color: $dark-sh50;
+}
+.bgc-dark-sh25 {
+    background-color: $dark-sh25;
+}
+.bgc-dark-sh5 {
+    background-color: $dark-sh5;
+}
+.purple {
+    background-color: $purple;
+}
+.green {
+    background-color: $green;
+}
+.color-dark-sh75 {
+    color: $dark-sh75;
+}
+.color-dark-sh50 {
+    color: $dark-sh50;
+}

@@ -6,13 +6,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 function htmlWebpackPluginWebsite(name){
     return new HTMLWebpackPlugin({
         filename: `${name}.html`,
-        template: `./src/pug/pages/website/${name}.pug`})
+        template: `./src/pages/website/${name}/${name}.pug`})
 }
 
 function htmlWebpackPluginUikit(name){
     return new HTMLWebpackPlugin({
         filename: `${name}.html`,
-        template: `./src/pug/pages/uikit/${name}.pug`})
+        template: `./src/pages/uikit/${name}/${name}.pug`})
 }
 
 module.exports = {
