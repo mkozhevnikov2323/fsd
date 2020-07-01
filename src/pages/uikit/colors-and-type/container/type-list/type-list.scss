@@ -3,9 +3,7 @@
 }
 .type-list__item {
     margin-bottom: 50px;
-}
-.type-list__item_flex {
-    display: flex;    
+    display: flex;
 }
 .font-h1 {
     font-family: $title-font;
@@ -33,13 +31,12 @@
     text-transform: uppercase;
 }
 .font-h3 {
-    font-family: $title-font;
+    font-family: $body-font;
     color: $dark;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 .type-list__tag-h1 {

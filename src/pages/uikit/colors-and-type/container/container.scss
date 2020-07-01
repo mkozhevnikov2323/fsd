@@ -1,13 +1,12 @@
 .container {
     max-width: 1160px;
     margin: 0 auto;
-}
-.container__item_w40 {
-    width: 40%;
-}
-.container_flexSB {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.w40 {
+    width: 40%;
 }
 .mt-145 {
     margin-top: 145px;

@@ -1,0 +1,193 @@
+.container.mt-140
+    .container__item.w320
+        .input-box
+            .input-box__title-group
+                p.font-h3.input-box__title-bold Text field
+                p.font-h4 Default
+            input(type="text", name="", placeholder="Email").input-lg.input-box__content
+        .input-box
+            .input-box__title-group
+                p.font-h3.input-box__title-bold Text field
+                p.font-h4 Hover / Focus
+            input(type="text", name="", placeholder="This is pretty awesome").input-lg.input-lg_hover.input-box__content
+        .input-box
+            .input-box__title-group
+                p.font-h3.input-box__title-bold Dropdown
+                p.font-h4 Default
+            select(name="").input-lg.input-box__content.select-css-lg
+                option(disabled selected) Сколько гостей
+        .input-box
+            .input-box__title-group
+                p.font-h3.input-box__title-bold Masked text field
+                p.font-h4 Default
+            input(type="text", name="", placeholder="ДД.ММ.ГГГГ").input-lg.input-box__content
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Date dropdown
+                select(name="").input-sm.input-box__content.select-css-sm
+                    option(disabled selected) ДД.ММ.ГГГГ
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Date dropdown
+                select(name="").input-sm.input-box__content.select-css-sm
+                    option(disabled selected) 19.08.2019
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Filter date dropdown
+                select(name="").input-md.input-box__content.select-css-md
+                    option(disabled selected) 19 авг - 23 авг
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Subscription text field
+                .input-btn
+                    input(type="text", name="", placeholder="Email").input-md.input-box__content
+    .container__item.w260
+        .group-buttons
+            p.font-h3 Checkbox Buttons
+            ul.checkbox-group
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="c1").checkbox-css
+                    label(for="c1") Можно курить
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="c2" checked).checkbox-css
+                    label(for="c2") Можно с питомцами
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="c3" checked).checkbox-css
+                    label(for="c3") Можно пригласить гостей <br>(до 10 человек)
+        .group-buttons
+            p.font-h3 Radio Buttons
+            ul.radiobtn-group
+                li.radiobtn-group__item
+                    input(type="radio", id="r1", value="1", name="radio" checked).radio-css
+                    label(for="r1") Мужчина
+                li.radiobtn-group__item
+                    input(type="radio", id="r2", value="2", name="radio").radio-css
+                    label(for="r2") Женщина
+        .group-buttons
+            p.font-h3 Toggle
+            ul.switch-group
+                li.switch-group__item
+                    input(type="checkbox", name="", id="s1" checked).switchbox-css
+                    label(for="s1") Получать спецпредложения
+                li.switch-group__item
+                    input(type="checkbox", name="", id="s2").switchbox-css
+                    label(for="s2") Получать спецпредложения
+        .group-buttons
+            p.font-h3 Like button
+            ul.like-group
+                li.like-group__item
+                    input(type="checkbox", name="", id="l1").likebox-css
+                    label(for="l1")
+                li.switch-group__item
+                    input(type="checkbox", name="", id="l2" checked).likebox-css
+                    label(for="l2")
+        .group-buttons
+            p.font-h3 Rate button
+            ul.rate-group
+                li.rate-group__item
+                    .star
+                    .star
+                    .star
+                    .star
+                    .star_border
+                li.rate-group__item
+                    .star
+                    .star
+                    .star
+                    .star
+                    .star
+    .container__item.w320
+        .input-box.w266.group-buttons
+            .input-box__title-group
+                p.font-h3.input-box__title-bold Range Slider
+                p.font-h4
+                    span.leftPriceOfSlider 5 000
+                    span.rouble ₽
+                    span.dash  - 
+                    span.rightPriceOfSlider 10 000
+                    span.rouble ₽
+            #id66.range.input-box__content
+                #id66b.range__between
+                button#id661.range__button_1
+                button#id662.range__button_2
+                input(type="text" id='id66i1' class='range_inpt1' min='100' max='15000' value='5000')
+                input(type="number" id='id66i2' class='range_inpt2' min='100' max='15000'  value='10000')
+        .group-buttons
+            p.font-h3 Buttons
+            ul.btn-group
+                li.btn-group__item
+                    button.btn Click me
+                li.btn-group__item
+                    button.btn_hover Click me
+                li.btn-group__item
+                    button.btn-white Click me
+                li.btn-group__item
+                    button.btn-white_hover Click me
+                li.brn-group__wrapper
+                    .btn-group__item
+                        button.btn-link Click me
+                    .btn-group__item
+                        button.btn-link_hover Click me
+                li.btn-group__item
+                    button.btn-lg Перейти к оплате
+                        span.material-icons arrow_forward
+        .group-buttons
+            p.font-h3 Pagination
+            ul.pagination-group.font-h4
+                li.pagination-group__item
+                    a.pagination-link.pagination-link__active(href="#") 1
+                li.pagination-group__item
+                    a.pagination-link(href="#") 2
+                li.pagination-group__item
+                    a.pagination-link(href="#") 3
+                li.pagination-group__item
+                    span.pagination-link.pagination-link__dots ...
+                li.pagination-group__item
+                    a.pagination-link(href="#") 15
+                li.pagination-group__item
+                    a.pagination-link.pagination-link__arrow(href="#")
+                        span.material-icons arrow_forward
+            p.pagination-desc 1 – 12 из 100+ вариантов аренды
+    .container__item.w320
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Dropdown
+                    p.font-h4 Default
+                select(name="").input-md.input-box__content.select-css-md
+                    option(disabled selected) 2 спальни, 2 кровати...
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Dropdown
+                    p.font-h4 Expanded
+                .input-box__content.dropdown-md
+                    .dropdown-md__placeholder#showDropdownRooms
+                        p 2 спальни, 2 кровати...
+                        span.material-icons expand_more
+                    .dropdown-md__hidden#dropdownRooms
+                        .dropdown-md__option 
+                            .font-h3 Спальни
+                            .quantity-buttons
+                                button.btn-minus#minus1 -
+                                p.result.font-h3#result1 2
+                                button.btn-plus#plus1 +
+                        .dropdown-md__option 
+                            .font-h3 Кровати
+                            .quantity-buttons
+                                button.btn-minus#minus2 -
+                                p.result.font-h3#result2 2
+                                button.btn-plus#plus2 +
+                        .dropdown-md__option 
+                            .font-h3 Ванные комнаты
+                            .quantity-buttons
+                                button.btn-minus#minus3 -
+                                p.result.font-h3#result3 0
+                                button.btn-plus#plus3 +
+    .container__item.w320
+    .container__item.w320
+    .container__item.w320
+    .container__item.w320

@@ -1,6 +1,8 @@
 @import 'nullstyle';
 @import 'vars';
+@import 'common';
 @import '../templates/template.scss';
 @import '../pages/uikit/colors-and-type/container/container.scss';
 @import '../pages/uikit/colors-and-type/container/color-list/color-list.scss';
-@import '../pages/uikit/colors-and-type/container/type-list/type-list.scss'
+@import '../pages/uikit/colors-and-type/container/type-list/type-list.scss';
+@import '../pages/uikit/form-elements/container/container.scss';

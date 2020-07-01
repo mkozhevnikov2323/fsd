@@ -1,9 +1,6 @@
 body {
     font-family: $body-font;
     color: $dark-sh75;
-    @extend .tpl-font-body;
-}
-.tpl-font-body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

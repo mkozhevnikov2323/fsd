@@ -3,8 +3,6 @@
 }
 .color-list__item {
     margin-bottom: 20px;
-}
-.color-list__item_flex {
     display: flex;
     flex-flow: row wrap;
 }
@@ -34,6 +32,9 @@
 }
 .purple {
     background-color: $purple;
+}
+.purple-gradient {
+    background-color:$purple-gradient;
 }
 .green {
     background-color: $green;
