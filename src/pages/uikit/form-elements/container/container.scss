@@ -158,7 +158,7 @@
     cursor: pointer;
 
     label {
-        margin-left: 6px;
+        margin-left: 10px;
         line-height: 22px;
         cursor: pointer;
     }
@@ -672,6 +672,10 @@
         padding-bottom: 9px;
         padding-right: 9px;
     }
+
+    &__text {
+        display: flex;
+    }
     
     &__hidden {
         display: none;
@@ -683,6 +687,7 @@
         border-bottom-right-radius: 4px;
         width: 266px;
         z-index: 1;
+        background-color: #ffffff;
     }
 
     &__option {
@@ -721,4 +726,144 @@
 }
 .show {
     display: block;
+}
+
+// Expandable checkbox list
+.mt-150 {
+    margin-top: 150px;
+}
+.icons {
+    line-height: 20px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.checkbox-list {
+    cursor: pointer;
+}
+.input-box__checkbox {
+    margin-top: 8px;
+}
+
+// Dropdown guests
+.dropdown-lg {
+    width: 320px;
+    position: relative;
+    color: $dark-sh75;
+    font-family: $body-font;
+    border: 1px solid $dark-sh25;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;    
+    font-size: 14px;
+
+    &__placeholder {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 9px;
+    }
+
+    &__text {
+        display: flex;
+    }
+    
+    &__hidden {
+        // display: none;
+        position: absolute;
+        top: 42px;
+        left: -1px;
+        border: 1px solid $dark-sh25;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 320px;
+        z-index: 1;
+        background-color: #ffffff;
+    }
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 14px;
+        padding-right: 7px;
+        padding-top: 6px;
+
+        &:last-child {
+            padding-bottom: 8px;
+        }
+    }
+}
+
+// Rich checkbox
+.mt-255 {
+    margin-top: 255px;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-sm {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-sh50;
+    margin-top: 5px;
+}
+
+// Bullet list
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: $dark-sh25;
+}
+.bullet {
+    display: flex;
+    align-items: baseline;
+    margin-top: 9px;
+
+    &__text {
+        margin-left: 10px;
+    }
+}
+.bullet-img {
+    width: 280px;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);;
+    margin-bottom: 20px;
+
+    &__text {
+        margin-left: 10px;
+    }
+}
+.icons-bullet {
+    font-size: 48px;
+    color: $purple;
+}
+.mt-105 {
+    margin-top: 105px;
+}
+
+// Testimonials 
+.w710 {
+    width: 710px;
+}
+.testimonial {
+    display: flex;
+
+    &__text {
+        margin-left: 10px;
+    }
+
+    &__desc {
+        margin-top: 10px;
+    }
+}
+.mt-115 {
+    margin-top: 115px;
 }

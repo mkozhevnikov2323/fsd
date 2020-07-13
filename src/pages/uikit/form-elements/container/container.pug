@@ -81,7 +81,7 @@
                 li.like-group__item
                     input(type="checkbox", name="", id="l1").likebox-css
                     label(for="l1")
-                li.switch-group__item
+                li.like-group__item
                     input(type="checkbox", name="", id="l2" checked).likebox-css
                     label(for="l2")
         .group-buttons
@@ -166,9 +166,12 @@
                     p.font-h4 Expanded
                 .input-box__content.dropdown-md
                     .dropdown-md__placeholder#showDropdownRooms
-                        p 2 спальни, 2 кровати...
+                        .dropdown-md__text#fullRooms
+                            p#bedRooms 2 спальни
+                            p#beds , 2 кровати
+                            p#bathRooms , 1 ван...
                         span.material-icons expand_more
-                    .dropdown-md__hidden#dropdownRooms
+                    .dropdown-md__hidden.show#dropdownRooms
                         .dropdown-md__option 
                             .font-h3 Спальни
                             .quantity-buttons
@@ -185,9 +188,141 @@
                             .font-h3 Ванные комнаты
                             .quantity-buttons
                                 button.btn-minus#minus3 -
+                                p.result.font-h3#result3 1
+                                button.btn-plus#plus3 +
+        .input-box.mt-150
+            .input-box__title-group.w260
+                p.font-h3.input-box__title-bold Expandable checkbox list
+                p.font-h4 
+                    span.material-icons.icons expand_more
+        .input-box.mt-40
+            .input-box__title-group.w260.checkbox-list
+                p.font-h3.input-box__title-bold Expandable checkbox list
+                p.font-h4 
+                    span.material-icons.icons expand_less
+            ul.checkbox-group.input-box__checkbox
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a1").checkbox-css
+                    label(for="a1") Завтрак
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a2" checked).checkbox-css
+                    label(for="a2") Письменный стол
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a3" checked).checkbox-css
+                    label(for="a3") Стул для кормления
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a4" checked).checkbox-css
+                    label(for="a4") Кроватка
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a5").checkbox-css
+                    label(for="a5") Телевизор
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="a6").checkbox-css
+                    label(for="a6") Шампунь
+    .container__item.w320
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Dropdown
+                .input-box__content.dropdown-lg
+                    .dropdown-lg__placeholder#showDropdownRooms
+                        .dropdown-lg__text#fullRooms
+                            p#bedRooms Сколько гостей
+                        span.material-icons expand_more
+                    .dropdown-lg__hidden.show#dropdownRooms
+                        .dropdown-lg__option 
+                            .font-h3 Взрослые
+                            .quantity-buttons
+                                button.btn-minus#minus1 -
+                                p.result.font-h3#result1 0
+                                button.btn-plus#plus1 +
+                        .dropdown-lg__option 
+                            .font-h3 Дети
+                            .quantity-buttons
+                                button.btn-minus#minus2 -
+                                p.result.font-h3#result2 0
+                                button.btn-plus#plus2 +
+                        .dropdown-lg__option 
+                            .font-h3 Младенцы
+                            .quantity-buttons
+                                button.btn-minus#minus3 -
                                 p.result.font-h3#result3 0
                                 button.btn-plus#plus3 +
+        .input-box.mt-255
+            .input-box__title-group.checkbox-list
+                p.font-h3.input-box__title-bold Rich Checkbox Buttons
+            ul.checkbox-group.input-box__checkbox
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="b1").checkbox-css
+                    label(for="b1") 
+                        p.text-bold Широкий коридор
+                        p.text-sm Ширина коридоров в номере <br>не менее 91 см.
+                li.checkbox-group__item
+                    input(type="checkbox", name="", id="b2").checkbox-css
+                    label(for="b2") 
+                        p.text-bold Помощник для инвалидов
+                        p.text-sm На 1 этаже вас встретит специалист <br>и проводит до номера.
     .container__item.w320
-    .container__item.w320
-    .container__item.w320
-    .container__item.w320
+        .input-box-wrapper
+            .input-box
+                .input-box__title-group
+                    p.font-h3.input-box__title-bold Dropdown
+                .input-box__content.dropdown-lg
+                    .dropdown-lg__placeholder#showDropdownRooms
+                        .dropdown-lg__text#fullRooms
+                            p#bedRooms 3 гостя
+                        span.material-icons expand_more
+                    .dropdown-lg__hidden.show#dropdownRooms
+                        .dropdown-lg__option 
+                            .font-h3 Взрослые
+                            .quantity-buttons
+                                button.btn-minus#minus1 -
+                                p.result.font-h3#result1 2
+                                button.btn-plus#plus1 +
+                        .dropdown-lg__option 
+                            .font-h3 Дети
+                            .quantity-buttons
+                                button.btn-minus#minus2 -
+                                p.result.font-h3#result2 1
+                                button.btn-plus#plus2 +
+                        .dropdown-lg__option 
+                            .font-h3 Младенцы
+                            .quantity-buttons
+                                button.btn-minus#minus3 -
+                                p.result.font-h3#result3 0
+                                button.btn-plus#plus3 +
+        .input-box.mt-255
+            .input-box__title-group.checkbox-list
+                p.font-h3.input-box__title-bold Bullet list
+            .bullet
+                .circle
+                p.bullet__text Нельзя с питомцами
+            .bullet
+                .circle
+                p.bullet__text Без вечеринок и мероприятий
+            .bullet
+                .circle
+                p.bullet__text Время прибытия — после 13:00, <br>а выезд до 12:00
+    .container__item.w320.mt-105
+        .bullet-img
+            span.material-icons.icons-bullet insert_emoticon
+            .bullet-img__text
+                p.text-bold Комфорт
+                p Шумопоглощающие стены
+        .bullet-img
+            span.material-icons.icons-bullet location_city
+            .bullet-img__text
+                p.text-bold Удобство
+                p Окно в каждой из спален
+    .container__item.w710.mt-115
+        .testimonial
+            .testimonial__img
+                .testimonial__photo
+                .like-group
+                    .like-group__item
+                        input(type="checkbox", name="", id="l3" checked).likebox-css
+                        label(for="l3")
+            .testimonial__text
+                p.text-bold Мурад Сарафанов
+                p 5 дней назад
+                p.testimonial__desc Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
